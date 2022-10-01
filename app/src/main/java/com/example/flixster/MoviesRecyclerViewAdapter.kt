@@ -49,6 +49,9 @@ class MoviesRecyclerViewAdapter(
 
         Glide.with(holder.mView)
             .load("https://image.tmdb.org/t/p/w500/"+movie.movieImageUrl)
+            .override(133,200)
+            .placeholder(R.drawable.movie_placeholder)
+            .error(R.drawable.movie_placeholder)
             .centerInside()
             .into(holder.mMovieImage)
     }
