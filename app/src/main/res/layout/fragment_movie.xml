@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="6dp">
+    android:layout_margin="4dp">
 
     <ImageView
         android:id="@+id/movie_image"
-        android:layout_width="wrap_content"
-        android:layout_height="170dp"
+        android:layout_width="133dp"
+        android:layout_height="200dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/movie_placeholder" />
@@ -18,6 +18,9 @@
         android:id="@+id/movie_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/movie_overview"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Orphan: First Kill" />
@@ -26,9 +29,9 @@
         android:id="@+id/movie_overview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:maxWidth="220dp"
+        android:maxWidth="200dp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/movie_image"
         app:layout_constraintTop_toBottomOf="@+id/movie_title"
         tools:text="After escaping from an Estonian psychiatric facility, Leena Klammer travels to America by impersonating Esther, the missing daughter of a wealthy family. But when her mask starts to slip, she is put against a mother who will protect her family from the murderous “child” at any cost." />
 </androidx.constraintlayout.widget.ConstraintLayout>
